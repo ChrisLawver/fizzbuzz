@@ -9,7 +9,7 @@ namespace FizzBuzz
             bool playGame = true;
 
             Console.WriteLine("Fizz Buzz!");
-
+            Console.WriteLine("Enter -1 to end program");
 
             while (playGame == true)
             {
@@ -27,6 +27,11 @@ namespace FizzBuzz
                 else if (userNumber % 5 == 0)
                 {
                     Console.WriteLine("Buzz");
+                }
+                else if (userNumber == -1)
+                {
+                    Console.Clear();
+                    playGame = false;
                 }
                 else
                 {
